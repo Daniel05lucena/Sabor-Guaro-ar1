@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body{
+    background-color: rgb(245, 245, 245);
+    overflow-x: hidden;
+    margin: 0 auto;
+
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    /*font-family: "Poetsen One", sans-serif;*/
+}
+
+.informacion p{
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    margin-top: -5px;
+}
+
+img:not(.navbar-img){
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor{
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 40px;
+    margin-top: 80px;
+}
+
+.presentacion{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+@media(min-width:768px){
+   .presentacion{
+        flex-direction: row;
+    }
+}
+
+/*Informacion*/
+
+.informacion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media(min-width:768px){
+    .informacion{
+        text-align: start;
+        align-items: flex-start;
+        margin-top: 80;
+    }
+
+    .informacion p {
+        text-align: start;
+        align-items: flex-start;
+        margin-top: 80;
+    }
+}
+
+.informacion-button button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(95, 189, 243);
+    border: 1px solid rgb(95, 189, 243);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 40px;
+
+}
+
+.informacion-button button:hover{
+    background-color: white;
+    color: rgb(95, 189, 243);
+    cursor: pointer;
+}
+
+/*informacion (noticias)*/
+
+.contenedor-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(224, 224, 224);
+  }
+  
+
+.presentacion-img-new {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.presentacion-img-new img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+  
+@media (max-width: 768px) {
+    .contenedor-new {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .presentacion-img-new {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .presentacion-img-new {
+      order: 2;
+    }
+  
+    .presentacion-img-new img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+}
+
+/*informacion img*/
+
+.presentacion-img{
+    max-width: 300px;
+    filter: drop-shadow(0 1mm 3mm rgb(95, 189, 243));
+    margin-left: 20px;
+}
+
+@media(min-width:456px){
+    .presentacion-img{
+        max-width: 500px;
+    }
+}
+
+@media(min-width:1024px){
+    .presentacion-img{
+        max-width: 800px;
+    }
+}
+
+/*Dishes Seccion*/
+
+.food{
+    width: 90%;
+    margin-inline: auto;
+}
+
+.dishes{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 85px;
+}
+
+@media (min-width: 992px) {
+    .dishes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.food-title{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 85px;
+}
+
+@media (min-width: 768px) {
+    .food-title{
+        text-align: start;
+        margin-top: 80;
+    }
+}
+
+/*style cards*/
+
+.dish{
+    width: 80%;
+    margin-inline: auto;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgba(196, 196, 196, 0.426);
+}
+
+.dish img{
+    width: 150px;
+    filter: drop-shadow(0 0 0.9rem rgb(95, 189, 243));
+    margin-top: -85px;
+}
+
+.dish p{
+    font-size: 15px;
+    color: rgb(63, 63, 63);
+}
+
+.dish-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.dish-info p{
+    font-weight: 900;
+}
+
+.dish-info button{
+    background-color: rgb(95, 189, 243);
+    color: white;
+    font-weight: 900;
+    padding: 5px 12px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.dish-info button:hover{
+    cursor: pointer;
+}
+
+
